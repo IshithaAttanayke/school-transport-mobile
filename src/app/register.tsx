@@ -50,7 +50,10 @@ export default function RegisterScreen() {
         secureTextEntry
       />
 
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity 
+      style={styles.button}
+      onPress={() => router.push('/role')}
+      >
         <Text style={styles.buttonText}>Create Account</Text>
       </TouchableOpacity>
 
