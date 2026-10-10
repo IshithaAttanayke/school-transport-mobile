@@ -1,9 +1,9 @@
 import { useRouter } from 'expo-router';
 import {
-    StyleSheet,
-    Text,
-    TouchableOpacity,
-    View,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
 } from 'react-native';
 
 export default function ParentScreen() {
@@ -34,7 +34,10 @@ export default function ParentScreen() {
           </Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.card}>
+        <TouchableOpacity 
+        style={styles.card}
+        onPress={() => router.push('/locations')}
+        >
           <Text style={styles.cardIcon}>📍</Text>
           <Text style={styles.cardTitle}>Locations</Text>
           <Text style={styles.cardText}>
@@ -42,7 +45,10 @@ export default function ParentScreen() {
           </Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.card}>
+        <TouchableOpacity 
+           style={styles.card}
+           onPress={() => router.push('/transport')}
+           >
           <Text style={styles.cardIcon}>🚐</Text>
           <Text style={styles.cardTitle}>Find Transport</Text>
           <Text style={styles.cardText}>
@@ -50,7 +56,10 @@ export default function ParentScreen() {
           </Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.card}>
+        <TouchableOpacity 
+        style={styles.card}
+        onPress={() => router.push('/subscription')}
+        >
           <Text style={styles.cardIcon}>📅</Text>
           <Text style={styles.cardTitle}>Subscription</Text>
           <Text style={styles.cardText}>
